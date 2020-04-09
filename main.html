@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Covid-19 Phase Checking</title>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="jvscript.js"></script>
+</head>
+
+<body>
+    <div class="nav-bar center">
+        <span class="tooltiptext">เลือกเพื่อไปยังส่วนต่างๆ</span>
+        <a class="nav" href="#program">Use Program</a>
+        <a class="nav" href="#reference">Reference</a>
+        <a class="nav" href="#members">Members</a>
+    </div>
+    <div class="m30px"></div>
+    <div class="flex" id="program">
+        <div class="web-topic center">
+            ตรวจสอบระยะ Covid-19
+        </div>
+        <div class="web-inside">
+            <section>
+                <div class="image">
+                    <img class="DFA" id="pic" src="state/TOC (5) (1).png">
+                </div>
+
+                <div class="flex inside">
+                    <div class="flex-left">
+                        <!--<section class="input">-->
+                        <div class="flex center">
+                            <div class="topic">
+                                <h3>STATE</h3>
+                            </div>
+                            <div class="state_accept center blinking" id="state_accept">
+                                <p class="center">ACCEPT !</p>
+                            </div>
+                            <div class="check_state center">
+                                <p class="br center" id="check_state">ระยะที่ 0 ไม่พบผู้ป่วยและการแพร่โรคในประเทศไทย</p>
+                                <p class="br can-ans center" id="c_answer">Input ที่จะไม่ทำให้เข้าสู่ Trap state:<br>
+                                    Detect = พบผู้ป่วยรายใหม่</p>
+                            </div>
+                        </div>
+
+                        <!--</section>-->
+                    </div>
+
+                    <div class="flex-right">
+                        <div class="flex center">
+                            <div class="topic">
+                                <h3>INPUT</h3>
+                            </div>
+                            <!--<div class="input">-->
+                                <div class="my_sequence">
+                                    <p id="my_sequence"></p>
+                                </div>
+                                <div>
+                                    <div class="set-btn">
+                                        <input class="btn" type="button" value="Yes" onclick="yes()"><br>
+                                        <input class="btn" type="button" value="No" onclick="no()"><br>
+                                        <input class="btn" type="button" value="Unknown" onclick="unknown()"><br>
+                                        <input class="btn" type="button" value="Detect" onclick="detect()"><br>
+                                    </div>
+                                    <div class="right">
+                                        <input class="btn-reset" type="button" value="Reset" onclick="reset()">
+                                    </div>
+                                </div>
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="ref" id="reference"><p>REFERENCE</p>
+        <div class="ref0">
+            <img src="S__2637870.jpg" class="ref1">
+            <img src="S__2637868.jpg" class="ref2">
+        </div>
+    </div>
+    
+</body>
+<footer id="members">
+    [59011453] นายสุรพัศ ไตรรัตนธาดา, [60010242] นางสาวชื่นจิต วิศิลป์, [60010304] นายณัฐธรรม วัฒนขจรกุล, [60010477] นายธีรภัทร ฉัตรตระกูล, [60010888] นางสาววรกมล ฉินประสิทธิชัย
+</footer>
+
+</html>
